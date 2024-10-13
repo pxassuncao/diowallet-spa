@@ -1,14 +1,16 @@
+import Home from "./pages/Home"
+import Signin from "./pages/Signin"
 
 
 
 function App() {
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-    </>
+    <main className="flex items-center justify-center h-screen">
+      <Signin/>
+    </main>
   )
+    
+  
 }
 
 export default App
