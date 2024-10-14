@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import logo from'../assets/LogoPrata.png';
 import Input from '../components/Input';
 import Button from '../components/button';
@@ -13,7 +14,8 @@ export default function Signin(){
                 <Input type="password" placeholder="Senha"/>
                 <Button type="submit" text="ENVIAR"/>              
             </form>
-            <p className='text-white text-2xl'>Não tem uma conta cadastrada? Criar conta</p>
+            <p className='text-white text-2xl'>Não tem uma conta cadastrada?<Link to="/cadastro" className='text-sky-400 hover:text-sky-600'>Criar conta</Link>{""}
+            </p>
         </div>
     );
 }
