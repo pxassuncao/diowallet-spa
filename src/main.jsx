@@ -21,17 +21,18 @@ const router = createBrowserRouter([
   {
     path: "/signin",
     element: <Signin/>,
-    errorElement:<div>Ops! Página não encontrada</div>
+    //errorElement:<div>Ops! Página não encontrada aqui</div>
   },
   {
     path: "/cadastro",
     element: <Cadastro/>,
-    errorElement:<div>Ops! Página não encontrada</div>
+    //errorElement:<div>Ops! Página não encontrada</div>
   },
   {
     path: "*",
     element: <ErrorPage />, // Exibe a página de erro para rotas inexistentes
-  }
+  },
+  
   
 ]);
 
@@ -39,5 +40,5 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
   </StrictMode>,
-)
-export default App;
+);
+
